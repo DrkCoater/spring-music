@@ -1,0 +1,21 @@
+<section class="music-list">
+    <h3>Music List</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Song Name</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Album</th>
+                <th scope="col">Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="song in songs">
+                <th scope="row">{{song.name}}</th>
+                <td>{{song.artist}}</td>
+                <td>{{song.album}}</td>
+                <td>@mdo</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
