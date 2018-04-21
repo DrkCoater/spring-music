@@ -42,7 +42,9 @@ public class MusicController {
         Music music = musicRepository.findById(musicId)
                 .orElseThrow(() -> new ResourceNotFoundException("Music", "id", musicId));
         music.setName(musicDetails.getName());
+        music.setArtist(musicDetails.getArtist());
         music.setAlbum(musicDetails.getAlbum());
+        music.setDuration(musicDetails.getDuration());
         return musicRepository.save(music);
     }
 

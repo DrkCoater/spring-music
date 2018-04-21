@@ -26,6 +26,8 @@ public class Music {
     @NotBlank
     private String album;
 
+    private long duration;
+
     @Column(nullable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
@@ -59,11 +61,21 @@ public class Music {
     public void setAlbum(String album) {
         this.album = album;
     }
+
     public String getArtist() {
         return this.artist;
     }
+
     public void setArtist(String artist) {
         this.artist = artist;
+    }
+
+    public long getDuration() {
+        return this.duration;
+    }
+
+    public void setDuration(long duration) {
+        this.duration = duration;
     }
 
     public Date getCreatedAt() {

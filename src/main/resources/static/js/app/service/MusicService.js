@@ -1,14 +1,18 @@
 angular.module('app')
     .factory('MusicService', ['$resource', function($resource) {
-        return $resource('/api/songs', {},
+        return $resource('/api/songs/:trackId', { trackId: '@id' },
             {
-                list: {
-                    method: 'GET',
-                    isArray: true
-                },
-                create: {
-                    method: 'POST'
+                update: {
+                    method: 'PUT'
                 }
             }
+            // default actions, no overrides needed
+            // {
+            //     'get':    {method:'GET'}, // get by ID
+            //     'save':   {method:'POST'}, // create
+            //     'query':  {method:'GET', isArray:true}, // list
+            //     'remove': {method:'DELETE'},
+            //     'delete': {method:'DELETE'}
+            // }
         );
     }]);

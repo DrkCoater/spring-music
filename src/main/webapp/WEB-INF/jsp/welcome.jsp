@@ -15,11 +15,10 @@
             <div class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand active" ui-sref="app" ui-sref-active="active">The Music Recommendation</a>
+                        <a class="navbar-brand active" ui-sref="list" ui-sref-active="active">The Music Recommendation</a>
                     </div>
                     <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a ui-sref="list">List Music</a></li>
+                        <ul class="nav navbar-nav navbar-right">
                             <li><a ui-sref="new">Publish New</a></li>
                         </ul>
                     </div>
