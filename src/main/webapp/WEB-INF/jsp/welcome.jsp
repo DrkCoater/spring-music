@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Spotify Music Recommendation</title>
+        <title>Music Publisher</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.2.0/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
@@ -15,7 +15,7 @@
             <div class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand active" ui-sref="list" ui-sref-active="active">The Music Recommendation</a>
+                        <a class="navbar-brand active" ui-sref="list" ui-sref-active="active">Music Publisher</a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
