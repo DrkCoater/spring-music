@@ -1,4 +1,5 @@
 /target/
+/target-grunt/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
