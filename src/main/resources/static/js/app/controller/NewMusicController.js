@@ -9,7 +9,7 @@ angular.module('app')
             album: '',
             duration: null
         };
-        $scope.track = $scope.trackId ? MusicService.get({ trackId: $scope.trackId }) : angular.copy($scope.defaultTrack);
+        $scope.track = $scope.trackId ? MusicService.get({trackId: $scope.trackId}) : angular.copy($scope.defaultTrack);
         $scope.onSubmit = function () {
             if ($scope.trackId) {
                 MusicService
@@ -32,6 +32,6 @@ angular.module('app')
             }
         };
         $scope.onReset = function () {
-            $scope.track = $scope.trackId ? MusicService.get({ trackId: $scope.trackId }) : angular.copy($scope.defaultTrack);
+            $scope.track = $scope.trackId ? MusicService.get({trackId: $scope.trackId}) : angular.copy($scope.defaultTrack);
         };
     }]);

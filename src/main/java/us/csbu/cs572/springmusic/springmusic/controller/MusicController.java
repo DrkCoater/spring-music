@@ -6,6 +6,7 @@ import us.csbu.cs572.springmusic.springmusic.repository.MusicRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import javax.validation.Valid;
 import java.util.List;
 
@@ -38,7 +39,7 @@ public class MusicController {
     // Update a Music
     @PutMapping("/songs/{id}")
     public Music updateMusic(@PathVariable(value = "id") Long musicId,
-                           @Valid @RequestBody Music musicDetails) {
+                             @Valid @RequestBody Music musicDetails) {
         Music music = musicRepository.findById(musicId)
                 .orElseThrow(() -> new ResourceNotFoundException("Music", "id", musicId));
         music.setName(musicDetails.getName());

@@ -1,6 +1,6 @@
 angular.module('app')
-    .factory('MusicService', ['$resource', function($resource) {
-        return $resource('/api/songs/:trackId', { trackId: '@id' },
+    .factory('MusicService', ['$resource', function ($resource) {
+        return $resource('/api/songs/:trackId', {trackId: '@id'},
             {
                 update: {
                     method: 'PUT'
